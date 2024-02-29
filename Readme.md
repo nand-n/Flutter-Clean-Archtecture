@@ -33,3 +33,8 @@
         2. State managment 
         3. Widgets 
 
+
+
+
+
+## Entitities are bussiness objects of an application or a system 
