@@ -75,3 +75,81 @@
     - They implement the repository interfaces defined in the domain layer.
     - Data Sources promote modularity and adher the DIP Prenciple 
 
+## Presentation - Bloc/Cubit 
+
+    - Bloc/Cubit manages the state of the UI and bussiness logic.
+    - It depends on usecases to execute bussiness operations.
+    - Bloc/Cubit emits states to the ui , decoupling it from bussiness logic.
+
+## Presentation - View 
+
+    - Views are responsible for displaying UI components and listeneing to bloc/cubit states.
+    - They reacts to state changes and update the ui accordingly 
+    - Views promote the SRP Prenciple by separating presentation logic from the bussiness logic 
+
+## TDD - Test Driven Develpment 
+
+    - TDD involves writing tests before implementating the actual code . Each layer and and module can be tested independently. 
+    TDD helps in achieving better code quality and fewer bugs. 
+
+## Dependency Injection 
+
+    - DI is used to provide dependencies to different layers of the app. 
+    - It helps in managing the dependencies and allows easy swapping of implementations. For example Getit can be used for dependency injection. 
+
+
+
+
+
+
+# Example Clean Archtecture  Login 
+
+## user Authentication 
+    - When the user clicks "Login " , it triggers the nest step 
+## Step 2 - Bloc Bussiness Logic 
+    - The Bloc(Bussiness logic component) handles the login process when the user logsin , the bloc continues to the nest step(Use case bussiness logic ).
+
+## Step 3 - Usecases  Bussiness logic 
+    - Usecases will hand over the login process to the repositories.
+## Step 4 - Repositories  Data Operations 
+    - Repositories define the contract b/n data adn domain layers .
+    - They will make a call to the data sources. 
+    - The Repository will be the implementaion of our contract or interface 
+## Step 5 - Data Sources 
+    - Data sources provice actual data form external sources. 
+    - They interact with repositories and continue to the next step.
+    - Data sources sends that response back to the repository 
+## step 6 Use Cases - bussiness logic 
+    - Usecases handles the server response
+## Step 7 - Bloc Bussiness logic 
+    - Bloc handles the final responses from the usecase 
+## Step 8 - View - User Result
+    - The vies recives the fianl result from the Bloc . 
+    - The login process is complete 
+
+## Using call for callable functions in dart 
+    
+     void main() {
+        final callable = Callable()
+        callable("nahi)
+     } 
+
+     class Callabele {
+        void call(String message) {
+            pring("Hello worled $message);
+        }
+     }
+
+     - This means we can use callable funciton with out calling the function call only by using call funciton.
+
+# Testing 
+ 
+  ## Unit testing 
+  - For unit testing testing we have to ask our selfs 
+    1. askdjfwhat does the class depends on 
+    2. how can we create a fake version of the dependencies 
+    3. How do we controll what our dependencies do
+
+    there are d/t type of testing libraries for dart 
+    - Moctail 
+    - Mockito 
