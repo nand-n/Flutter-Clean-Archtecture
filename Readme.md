@@ -153,3 +153,11 @@
     there are d/t type of testing libraries for dart 
     - Moctail 
     - Mockito 
+
+
+# MVVM
+    MVVM Pattern helps to cleanly separate application's bussiness and presentation logic fron the users interface . 
+
+    Mantaining A clean separation b/n application logic and the ui helps address numerous development issues and makes an application easieer to test , mantain and evelve . 
+    
+    it can also significantly improve core re uses opportunity and allows developers and ui designers to collaborate more easily when developing their respective parts of an app.
