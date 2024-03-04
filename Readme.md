@@ -161,3 +161,8 @@
     Mantaining A clean separation b/n application logic and the ui helps address numerous development issues and makes an application easieer to test , mantain and evelve . 
     
     it can also significantly improve core re uses opportunity and allows developers and ui designers to collaborate more easily when developing their respective parts of an app.
+
+
+## TDD 
+
+### Test Driven Development 
