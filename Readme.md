@@ -169,3 +169,4 @@
     - Streams are usefull 
 
 ## Cubit vs Bloc
+    One of the main reason to use MVVM is to separate bussiness logic with the data layer , it separates the bussiness logic to presentaion layer
