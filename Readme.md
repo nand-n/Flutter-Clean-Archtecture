@@ -158,7 +158,7 @@
 # MVVM
     MVVM Pattern helps to cleanly separate application's bussiness and presentation logic fron the users interface . 
 
-    Mantaining A clean separation b/n application logic and the ui helps address numerous development issues and makes an application easieer to test , mantain and evelve . 
+    Mantaining A clean separation b/n application logic and the ui helps address numerous development issues and makes an application easieer to test , mantain and evolve . 
     
     it can also significantly improve core re uses opportunity and allows developers and ui designers to collaborate more easily when developing their respective parts of an app.
 
@@ -173,4 +173,15 @@
 
 ## Streem 
     Asyncronous 
+
+## Flutter stemanagment Concepts 
     
+    Stream/Observables - Update UIs based on state changes
+    Repositories/Stores - Central data stores 
+    Bussiness logic component - Encapsulate state update logic 
+    Dependency Injection - Provide data stores to components
+## Core Concepts of BLoc Pattern 
+    - Events : Signify users activities of other actinos that can alter the application's state.
+    - Bloc is a class that takes in events , process them and produces a new state. It is in charge of controlling the application's state and responding to 
+    - Bloc enforces a clear separation of concern with in you'r code base. it clearly devides the application in to three distnict layer. 
+    - Bloc pattern cleanly devides the application in to 
