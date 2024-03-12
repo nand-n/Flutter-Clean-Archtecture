@@ -185,3 +185,21 @@
     - Bloc is a class that takes in events , process them and produces a new state. It is in charge of controlling the application's state and responding to 
     - Bloc enforces a clear separation of concern with in you'r code base. it clearly devides the application in to three distnict layer. 
     - Bloc pattern cleanly devides the application in to 
+
+
+## Bloc Provider 
+    - is a flutter widget which creates and provides a bloc to all of a childred
+    - it is also known as a dependenecy injection widget , so that a single instance of a bloc can be provided  to multiple widgets in the the tree 
+    - Bloc provider creates a single instance of the bloc using the function that accepts Build context as an argument 
+
+        BlocProvider(
+            create(BuildContext context) => BlocA();
+            child: Child()
+        )
+
+## What is Archtecure 
+    - Archtecure is the sceloton  , the blueprint , the structure  which keeps the code organized stable and easy to test and mentain.
+
+## Bloc Archtecture 
+    - is  an archtectural pattern that organize and helps to write clean codes.
+    
