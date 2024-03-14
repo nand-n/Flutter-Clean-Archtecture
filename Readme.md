@@ -202,4 +202,28 @@
 
 ## Bloc Archtecture 
     - is  an archtectural pattern that organize and helps to write clean codes.
+## The data provider 
+    - Is A class which communicates with the models and the repositories and contains d/t funcitions.
     
+### Repositories 
+    - Are classes which contian dependencies of the respective data providers 
+    - Repositories are dependengt on the data provider 
+    - 
+
+## Flutter navigation 
+    - FLutter uses stack for navigation , and the pop and the push methor are used to add to the 
+## Local Acceess 
+    - Providing an instance of bloc/cubit to multiple screens called route access.
+## Routing 
+    1. Anonimous Routing :
+        - Routing with out routing name 
+        - Only the screens are used to navigate 
+
+    2. Named Routing : 
+        - Routing with the provided Route name 
+        - Route names and their associated screens are set up inside routes parametersof MaterialApp widget. 
+    3. Generated Routing : 
+        -  Navigation with Route Name 
+        - RouteNames and thir associated screens are set up incide a separete onGenerateRotue function 
+
+## BlocProvider.value 
