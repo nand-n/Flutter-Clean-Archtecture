@@ -226,5 +226,10 @@
         -  Navigation with Route Name 
         - RouteNames and thir associated screens are set up incide a separete onGenerateRotue function 
 
-## BlocProvider.value 
-    - 
+## Bloc Archtecture 
+    -  Bloc is 
+        1. a Design Pattern 
+        2. State Management Library 
+        3. Archtectural Pattern 
+    - for Every interaction a user intect with the ui there will be an event 
+    
